@@ -22,6 +22,56 @@ router.get('/', (req, res) => {
         });
 });
 
+router.get('/:id', (req, res) => {
+    Customer.findOne({
+        where: {
+            id: req.params.id
+        }
+    })
+        .then(tagData => {
+            res.json(tagData)
+        })
+})
+
+// router.get('/:last_name', (req, res) => {
+//     Customer.findOne({
+//         where: {
+//             last_name: req.params.last_name
+//         }
+//     })
+//         .then(tagData => {
+//             res.json(tagData)
+//         })
+// })
+
+router.post('/', (req, res) => {
+    Customer.create(req.body)
+        .then(customerData => {
+            res.json(customerData)
+        })
+});
+
+router.put('/:id', (req, res) => {
+    Customer.update(req.body, {
+        where: {
+            id: req.params.id
+        }
+    })
+        .then(customerData => {
+            res.json(customerData)
+        })
+});
+
+router.delete('/:id', (req, res) => {
+    Customer.destroy({
+        where: {
+            id: req.params.id
+        }
+    })
+        .then(customerData => {
+            res.json(customerData)
+        })
+});
 
 module.exports = router;
 
