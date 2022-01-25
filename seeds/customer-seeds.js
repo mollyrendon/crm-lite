@@ -82,7 +82,7 @@ const customerData = [
         first_name: 'Ru',
         last_name: 'Paul',
         email: 'rupaul@aol.com',
-        phone_number: '777-555-7889',
+        phone_number: '',
         is_customer: '0'
     },
     {
