@@ -27,11 +27,11 @@ Customer.init(
             type: DataTypes.STRING,
             allowNull: true,
         },
-        phone: {
+        phone_number: {
             type: DataTypes.STRING,
             allowNull: true,
             validate: {
-                len: [4]
+                len: [12]
             }
         },
         is_customer: {
