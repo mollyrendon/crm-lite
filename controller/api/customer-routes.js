@@ -1,5 +1,7 @@
 const router = require("express").Router();
-const Customer = require("../../models/customer");
+const sequelize = require("../../config/connection");
+const Customer = require("../../models/customer.js");
+const withAuth = require("../../utils/auth");
 
 //Get all customers
 
@@ -13,6 +15,7 @@ router.get("/", (req, res) => {
       "email",
       "phone_number",
       "is_customer",
+      [sequelize.literal("(SELECT COUNT(*) FROM customer)"), "all_customers"],
     ],
   })
     .then((customerData) => res.json(customerData))
@@ -42,13 +45,13 @@ router.get("/:last_name", (req, res) => {
   });
 });
 
-router.post("/", (req, res) => {
+router.post("/", withAuth, (req, res) => {
   Customer.create(req.body).then((customerData) => {
     res.json(customerData);
   });
 });
 
-router.put("/:id", (req, res) => {
+router.put("/:id", withAuth, (req, res) => {
   Customer.update(req.body, {
     where: {
       id: req.params.id,
@@ -58,14 +61,14 @@ router.put("/:id", (req, res) => {
   });
 });
 
-// router.delete("/:id", (req, res) => {
-//   Customer.destroy({
-//     where: {
-//       id: req.params.id,
-//     },
-//   }).then((customerData) => {
-//     res.json(customerData);
-//   });
-// });
+router.delete("/:id", withAuth, (req, res) => {
+  Customer.destroy({
+    where: {
+      id: req.params.id,
+    },
+  }).then((customerData) => {
+    res.json(customerData);
+  });
+});
 
 module.exports = router;
