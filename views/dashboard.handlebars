@@ -1,45 +1,54 @@
 <section>
-    <h2>Create New Customer</h2>
-    <form class="new-customer-form">
-        <div>
-            <label for="fname" id="firstName">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname" id="lastName">Last name:</label><br>
-            <input type="text" id="lname" name="lname">
-            <label for="email" id="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br>
-            <label for="phonenum" id="phonenum">Phone Number:</label><br>
-            <input type="text" id="phonenum" name="phonenum">
-            <p>Is this a current customer or prospect?</p>
-            <input type="radio" id="Customer" name="fav_language" value="HTML">
-              <label for="html">Customer</label><br>
-            <input type="radio" id="Prospect" name="fav_language" value="HTML">
-              <label for="html">Prospect</label><br>
 
-    </form>
+    <div class="container">
+        <div class="row">
+            <form id="new-customer-form">
+                <div class="col-sm-4">
+                    <h2>Create New Customer</h2>
+                    <label for="fname" id="firstName">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname" id="lastName">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                    <label for="email" id="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="phonenum" id="phonenum">Phone Number:</label><br>
+                    <input type="text" id="phonenum" name="phonenum">
+                    <p>Is this a current customer or prospect?</p>
+                    <input type="radio" id="Customer" name="fav_language" value="HTML">
+                    <label for="html">Customer</label><br>
+                    <input type="radio" id="Prospect" name="fav_language" value="HTML">
+                    <label for="html">Prospect</label><br>
+
+
+                    <button type="submit" class="btn">Create</button>
+                </div>
+            </form>
+
+
+            <div class="col-sm-4 text-center">
+                <h2>View All Customers</h2>
+                <class="view-customers">
+                    <button type="submit" class="btn">View</button>
+                </class>
+            </div>
+
+
+
+
+            <div class="col-sm-4 text-center">
+                <h2>Search Customer</h2>
+                <class="search-customer">
+                    <button type="submit" class="btn">Search</button>
+                </class>
+            </div>
+        </div>
     </div>
-    <button type="submit" class="btn">Create</button>
-    </form>
-</section>
+    </div>
+    </div>
 
-<section>
-    <h2>View All Customers</h2>
-    <class="view-customers">
-        <div>
-            <button type="submit" class="btn">View</button>
-        </div>
-    </class>
 </section>
 
 
-<section>
-    <h2>Search Customer</h2>
-    <class="search-customer">
-        <div>
-            <button type="submit" class="btn">Search</button>
-        </div>
-    </class>
-</section>
 
 
 <script src="../public/javascript/customer.js"></script>
