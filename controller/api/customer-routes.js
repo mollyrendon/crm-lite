@@ -8,6 +8,9 @@ const withAuth = require("../../utils/auth");
 router.get("/", (req, res) => {
   console.log("whatever");
   Customer.findAll({
+    where: {
+      user_id: req.session.user_id,
+    },
     attributes: [
       "id",
       "first_name",
@@ -46,7 +49,12 @@ router.get("/:last_name", (req, res) => {
 });
 
 router.post("/", withAuth, (req, res) => {
-  Customer.create(req.body).then((customerData) => {
+  console.log("here", req.body, req.session);
+
+  Customer.create({
+    ...req.body,
+    user_id: req.session.user_id,
+  }).then((customerData) => {
     res.json(customerData);
   });
 });
