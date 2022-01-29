@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+</head>
+
 <section>
     <h2>Create New Customer</h2>
     <class="new-customer-form">
@@ -27,5 +31,103 @@
         </class>
 </section>
 
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    <div class="container">
+        <div class="col-12 col-md-6 col-xl mb-3">
+              <div class="row">
+                <div class="col-2 hour time-block" >9am</div>
+                <textarea id="9" class="col-8 description"></textarea>
+                <button class="col-2 saveBtn" onclick="saveData()">
+                  <i class="fas fa-save"></i>
+                </button>
+              </div>
+        </div>
 
-<script src="/javascript/customer.js"></script>
+        <div class="col-12 col-md-6 col-xl mb-3">
+            <div class="row">
+              <div class="col-2 hour time-block" >10am</div>
+              <textarea id="10" class="col-8 description"></textarea>
+              <button class="col-2 saveBtn" onclick="saveData()">
+                <i class="fas fa-save"></i>
+              </button>
+            </div>
+        </div>
+
+      <div class="col-12 col-md-6 col-xl mb-3">
+          <div class="row">
+            <div class="col-2 hour time-block" >11am</div>
+            <textarea id="11" class="col-8 description"></textarea>
+            <button class="col-2 saveBtn" onclick="saveData()">
+              <i class="fas fa-save"></i>
+            </button>
+          </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xl mb-3">
+          <div class="row">
+            <div class="col-2 hour time-block" >12pm</div>
+            <textarea id="12" class="col-8 description"></textarea>
+            <button class="col-2 saveBtn" onclick="saveData()">
+              <i class="fas fa-save"></i>
+            </button>
+          </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xl mb-3">
+          <div class="row">
+            <div class="col-2 hour time-block" >1pm</div>
+            <textarea id="13" class="col-8 description"></textarea>
+            <button class="col-2 saveBtn" onclick="saveData()">
+              <i class="fas fa-save"></i>
+            </button>
+          </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xl mb-3">
+          <div class="row">
+            <div class="col-2 hour time-block" >2pm</div>
+            <textarea id="14" class="col-8 description"></textarea>
+            <button class="col-2 saveBtn" onclick="saveData()">
+              <i class="fas fa-save"></i>
+            </button>
+          </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xl mb-3">
+          <div class="row">
+            <div class="col-2 hour time-block" >3pm</div>
+            <textarea id="15" class="col-8 description"></textarea>
+            <button class="col-2 saveBtn" onclick="saveData()">
+              <i class="fas fa-save"></i>
+            </button>
+          </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xl mb-3">
+          <div class="row">
+            <div class="col-2 hour time-block" >4pm</div>
+            <textarea id="16" class="col-8 description"></textarea>
+            <button class="col-2 saveBtn" onclick="saveData()">
+              <i class="fas fa-save"></i>
+            </button>
+          </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-xl mb-3">
+          <div class="row">
+            <div class="col-2 hour time-block" >5pm</div>
+            <textarea id="17" class="col-8 description"></textarea>
+            <button class="col-2 saveBtn" onclick="saveData()">
+              <i class="fas fa-save"></i>
+            </button>
+          </div>
+        </div>
+    </div>
+
+
+<script src="/javascript/customer.js"></script>  {{!-- {{Don't think we need this script}} --}}
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="/javascript/script.js"></script>
