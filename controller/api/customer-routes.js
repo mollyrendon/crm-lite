@@ -5,7 +5,7 @@ const withAuth = require("../../utils/auth");
 
 //Get all customers
 
-router.get("/", (req, res) => {
+router.get("/", withAuth, (req, res) => {
   console.log("whatever");
   Customer.findAll({
     where: {
@@ -28,7 +28,7 @@ router.get("/", (req, res) => {
     });
 });
 
-router.get("/:id", (req, res) => {
+router.get("/:id", withAuth, (req, res) => {
   Customer.findOne({
     where: {
       id: req.params.id,
@@ -38,7 +38,7 @@ router.get("/:id", (req, res) => {
   });
 });
 
-router.get("/:last_name", (req, res) => {
+router.get("/:last_name", withAuth, (req, res) => {
   Customer.findOne({
     where: {
       last_name: req.params.last_name,

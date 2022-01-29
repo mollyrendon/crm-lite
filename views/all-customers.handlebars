@@ -1,5 +1,46 @@
 <h2>All Customers</h2>
 
+<table>
+    <thead>
+        <tr>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+             <th>
+                Email
+            </th>
+             <th>
+                Phone Number
+            </th>
+             <th>
+                Is Customer
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each customers}}
+        <tr>
+            <td>
+                {{first_name}}
+            </td>
+            <td>
+                {{last_name}}
+            </td>
+             <td>
+                {{email}}
+            </td>
+             <td>
+                {{phone_number}}
+            </td>
+             <td>
+                {{is_customer}}
+            </td>
+        </tr>
+        {{/each}}
+        
+    </tbody>
+</table>
 
-
-<script src="/javascript/customer"></script>
