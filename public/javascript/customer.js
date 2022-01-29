@@ -1,12 +1,12 @@
 async function createNewCustomer(event) {
   event.preventDefault();
 
-  const firstName = document.querySelector("#firstName").value.trim();
-  const lastName = document.querySelector("#lastName").value.trim();
+  const first_name = document.querySelector("#first_name").value.trim();
+  const last_name = document.querySelector("#last_name").value.trim();
   const email = document.querySelector("#email").value.trim();
-  const phone = document.querySelector("#phoneNum").value.trim();
+  const phone_number = document.querySelector("#phone_number").value.trim();
   const areYouAPayingCustomer = document
-    .querySelector("#phoneNum")
+    .querySelector("")
     .value.trim();
 }
 

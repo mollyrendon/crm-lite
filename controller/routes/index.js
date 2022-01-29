@@ -20,4 +20,7 @@ router.get("/homepage", (req, res) => {
   res.render("homepage");
 });
 
+router.get("/new-customers", (req, res) => {
+  res.render("new-customers");
+});
 module.exports = router;
