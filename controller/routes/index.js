@@ -19,10 +19,6 @@ router.get("/logout", (req, res) => {
   res.render("logout");
 });
 
-router.get("/homepage", (req, res) => {
-  res.render("homepage");
-});
-
 router.get("/new-customers", withAuth, (req, res) => {
   res.render("new-customers", { loggedIn: req.session.loggedIn });
 });
@@ -60,7 +56,7 @@ router.get("/all-customers", withAuth, (req, res) => {
 });
 
 router.get("/search-customers", withAuth, (req, res) => {
-  res.render("search-customers");
+  res.render("search-customers", { loggedIn: req.session.loggedIn });
 });
 
 module.exports = router;

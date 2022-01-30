@@ -20,6 +20,9 @@
              <th class="col-sm-2">
                 Is Customer
             </th>
+            <th>
+                Delete
+            </th>
         </tr>
     </thead>
     </div>
@@ -45,6 +48,9 @@
              <td class="col-sm-2">
                 {{is_customer}}
             </td>
+            <td>
+                <button class="delete-button" data-id="{{id}}">Delete</button>
+            </td>
         </tr>
         {{/each}}
         
@@ -54,3 +60,4 @@
 </div>
 
 <script src="/javascript/logout.js"></script>
+<script src="/javascript/delete-customers.js"></script>

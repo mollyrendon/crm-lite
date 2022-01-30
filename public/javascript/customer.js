@@ -23,6 +23,10 @@ async function createNewCustomer(event) {
       headers: { "Content-Type": "application/json" },
     }).then((response) => {
       console.log(response);
+      document.querySelector("#first_name").value = "";
+      document.querySelector("#last_name").value = "";
+      document.querySelector("#email").value = "";
+      document.querySelector("#phone_number").value = "";
     });
   }
 }
