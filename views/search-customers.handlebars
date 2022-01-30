@@ -1,12 +1,50 @@
-<section>
-    <h2>Search Customer</h2>
-<div class="search">
-    <input id="searchCustomer" type="text" placeholder="Type in Customer's Name">
-</div>
-<br>
-<div>
-    <button type="submit" class="btn">Search</button>
-</div>
-</section>
+<input id="searchbar" onkeyup="search_customer()" type="text" name="search" placeholder="Search">
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                First Name
+            </th>
+            <th>
+                Last Name
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Phone Number
+            </th>
+            <th>
+                Is Customer
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each customers}}
+        <tr>
+            <td>
+                {{first_name}}
+            </td>
+            <td>
+                {{last_name}}
+            </td>
+            <td>
+                {{email}}
+            </td>
+            <td>
+                {{phone_number}}
+            </td>
+            <td>
+                {{is_customer}}
+            </td>
+        </tr>
+        {{/each}}
+
+    </tbody>
+</table>
+
+<!-- linking javascript -->
+<script src="/javascript/search"></script>
 
 <script src="/javascript/logout.js"></script>

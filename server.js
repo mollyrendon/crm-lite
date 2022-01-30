@@ -4,6 +4,8 @@ const session = require("express-session");
 const controller = require("./controller");
 const sequelize = require("./config/connection");
 const exphbs = require("express-handlebars");
+const bodyParser = require('body-parser')
+const { check, validationResult } = require('express-validator')
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -24,6 +26,7 @@ app.use(session(sess));
 
 const helpers = require("./utils/helpers");
 const hbs = exphbs.create({ helpers });
+const urlencodeParser = bodyParser.urlencoded({ extended: false });
 
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");

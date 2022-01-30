@@ -1,7 +1,22 @@
 const router = require("express").Router();
+const { validationResult, check } = require("express-validator");
 const User = require("../../models/user");
+const bodyParser = require('body-parser');
 
-router.post("/", (req, res) => {
+router.post("/", [
+  check('username', 'This username must be longer than 3 characters')
+    .exists()
+    .isLength({ min: 4 }),
+  check('email', 'email is not valid')
+    .isEmail()
+    .normalizeEmail
+], (req, res) => {
+
+  const errors = validationResult(req)
+  if (!errors.isEmpty()) {
+    const alert = errors.array()
+  }
+
   User.create({
     username: req.body.username,
     email: req.body.email,
