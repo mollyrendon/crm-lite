@@ -30,8 +30,7 @@ a {
 
 /*Hover effect for link buttons */
 a:hover {
-  color: white;
-  background-color: #8ABD91;
+  color: #013220;
   text-decoration: none;
 }
 
@@ -48,7 +47,7 @@ button {
 }
 
 button:hover {
-  background-color: #8ABD91;
+  background-color: #013220;
   color: white;
 }
 
@@ -77,7 +76,7 @@ header {
   padding: 0 1%;
 }
 
-
+/* all input bars including search bar*/
 input {
   color: #8ABD91;
   border-radius: 5px;
@@ -128,8 +127,8 @@ main {
 }
 
 .btn-no-style:hover {
-  background: #8ABD91;
-  color: white;
+  color: #013220;
+  background-color: transparent;
 }
 
 /*Customer Section Styles*/
@@ -150,6 +149,29 @@ main {
   background-color: #8ABD91;
   color: white;
   text-decoration: none;
+}
+
+/*styling for new customer and search customer buttons*/
+
+.butn button {
+  background-color: #8ABD91;
+  color: white;
+  border: 0;
+  padding: 1%;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.butn .btn {
+  border: 0;
+  padding: 1%;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.butn button:hover {
+  background-color: #013220;
+  color: white;
 }
  
 /* Scheduler Styles Start */
