@@ -13,7 +13,7 @@ html {
   color: #333;
 }
 
-/*A tags for Dashboard, Login, button, links*/
+/*A tags for Dashboard, Login, links*/
 a {
   text-decoration: none;
   color: #225ca3;
@@ -24,6 +24,22 @@ a {
 /*Hover effect for link buttons */
 a:hover {
   color: #3486eb;
+}
+
+/*Login and Logout buttons on login page*/
+button {
+  background-color: #225ca3;
+  border: 0;
+  padding: 1%;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.1s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3486eb;
 }
 
 form > div {
@@ -51,10 +67,12 @@ header {
   padding: 0 1%;
 }
 
+/*CRM Lite Header*/
 header h1 {
   font-size: 2em;
 }
 
+/**/
 h2 {
   font-size: 20px;
 }
@@ -85,6 +103,7 @@ main {
 }
 
 /*Customer Section Styles*/
+
 .customer button {
   color: #225ca3;
 }
