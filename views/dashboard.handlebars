@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 
-<section>
+<section class="customer">
     <h2>Create New Customer</h2>
     <class="new-customer-form">
         <div>
@@ -12,7 +12,7 @@
         </div>
 </section>
 
-<section>
+<section class="customer">
     <h2>View All Customers</h2>
     <class="view-customers">
         <a href="/all-customers">
@@ -22,7 +22,7 @@
 </section>
 
 
-<section>
+<section class="customer">
     <h2>Search Customer</h2>
     <class="search-customer">
         <a href="/search-customers">
@@ -31,11 +31,13 @@
         </class>
 </section>
 
+<section class="scheduler">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     <div class="container">
-        <div class="col-12 col-md-6 col-xl mb-3">
+        
+        <div class="col-12 col-md-6 col-xl mb-3"></div>
               <div class="row">
                 <div class="col-2 hour time-block" >9am</div>
                 <textarea id="9" class="col-8 description"></textarea>
@@ -43,7 +45,7 @@
                   <i class="fas fa-save"></i>
                 </button>
               </div>
-        </div>
+    </div>
 
         <div class="col-12 col-md-6 col-xl mb-3">
             <div class="row">
@@ -125,7 +127,7 @@
           </div>
         </div>
     </div>
-
+</section>
 
 <script src="/javascript/customer.js"></script>  {{!-- {{Don't think we need this script}} --}}
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
