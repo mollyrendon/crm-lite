@@ -1,23 +1,30 @@
 <section>
+    <div class="customer">
     <h2>Create New Customer</h2>
+    <br>
     <form class="new-customer-form">
         <div>
-            <label>First name:</label><br>
-            <input type="text" id="first_name"><br>
-            <label>Last name:</label><br>
-            <input type="text" id="last_name">
-            <label>Email:</label><br>
-            <input type="text" id="email"><br>
-            <label>Phone Number:</label><br>
-            <input id="phone_number">
+            <label>First name:</label>
+            <input type="text" id="first_name"><br><br>
+            <label>Last name:</label>
+            <input type="text" id="last_name"><br><br>
+            <label>Email:</label>
+            <input type="text" id="email"><br><br>
+            <label>Phone Number:</label>
+            <input id="phone_number"><br><br>
             <p>Is this a current customer or a prospector?</p>
+            <div>
             <input type="radio" name="type" value="customer">
-            <label for="html">Customer</label><br>
+            Customer
+            </div>
+            <div>
             <input type="radio" name="type" value="prospector">
-            <label for="html">Prospector</label><br>
-        </div>
+            Prospector
+            </div>
+            <br>
         <button type="submit" class="btn">Create</button>
     </form>
+    </div>
 </section>
 
 <script src="/javascript/customer.js"></script>

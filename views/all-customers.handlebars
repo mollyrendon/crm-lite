@@ -1,41 +1,48 @@
 <h2>All Customers</h2>
-
+<br>
+<div class="container">
+<div class="row">
 <table>
     <thead>
         <tr>
-            <th>
+            <th class="col-sm-2">
                 First Name
             </th>
-            <th>
+            <th class="col-sm-2">
                 Last Name
             </th>
-             <th>
+             <th class="col-sm-2">
                 Email
             </th>
-             <th>
+             <th class="col-sm-4">
                 Phone Number
             </th>
-             <th>
+             <th class="col-sm-2">
                 Is Customer
             </th>
         </tr>
     </thead>
+    </div>
+    </div>
+
+    <div class="container">
+    <div class="row">
     <tbody>
         {{#each customers}}
         <tr>
-            <td>
+            <td class="col-sm-2">
                 {{first_name}}
             </td>
-            <td>
+            <td class="col-sm-2">
                 {{last_name}}
             </td>
-             <td>
+             <td class="col-sm-2">
                 {{email}}
             </td>
-             <td>
+             <td class="col-sm-4">
                 {{phone_number}}
             </td>
-             <td>
+             <td class="col-sm-2">
                 {{is_customer}}
             </td>
         </tr>
@@ -43,5 +50,7 @@
         
     </tbody>
 </table>
+</div>
+</div>
 
 <script src="/javascript/logout.js"></script>

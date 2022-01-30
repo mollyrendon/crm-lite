@@ -9,26 +9,35 @@ html {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: Georgia;
   color: #333;
 }
 
 /*A tags for Dashboard, Login, links*/
 a {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #8ABD91;
+  font-size: 100%;
   font-weight: bold;
   transition: color 0.1s;
+  margin-left: 16px;
+  border-radius: 5px;
 }
 
 /*Hover effect for link buttons */
 a:hover {
-  color: #3486eb;
+  color: white;
+  background-color: #8ABD91;
+  text-decoration: none;
 }
 
 /*Login and Logout buttons on login page*/
 button {
-  background-color: #225ca3;
+  background-color: #8ABD91;
   border: 0;
   padding: 1%;
   color: white;
@@ -39,7 +48,8 @@ button {
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: #8ABD91;
+  color: white;
 }
 
 form > div {
@@ -67,14 +77,33 @@ header {
   padding: 0 1%;
 }
 
+
+input {
+  color: #8ABD91;
+  border-radius: 5px;
+}
+
+/*search bar*/
+input:focus::placeholder {
+  color: transparent;
+}
+
+input#searchCustomer {
+  width: 200px;
+}
+
 /*CRM Lite Header*/
 header h1 {
   font-size: 2em;
 }
 
-/**/
+h1.display-3 {
+  font-weight: bold;
+}
+
 h2 {
   font-size: 20px;
+  font-weight: bold;
 }
 
 main {
@@ -90,36 +119,39 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #8ABD91;
   font-size: 100%;
   font-weight: bold;
   transition: color 0.1s;
   margin-left: 16px;
+  border-radius: 5px;
 }
 
 .btn-no-style:hover {
-  background: none;
-  color: #3486eb;
+  background: #8ABD91;
+  color: white;
 }
 
 /*Customer Section Styles*/
 
 .customer button {
-  color: #225ca3;
+  color: #8ABD91;
 }
 
 .customer .btn {
   border: 0;
   padding: 1%;
-  color: #225ca3;
+  color: #8ABD91;
   font-weight: bold;
   border-radius: 5px;
 }
 
 .customer button:hover {
-  background-color: #3486eb;
+  background-color: #8ABD91;
+  color: white;
+  text-decoration: none;
 }
-
+ 
 /* Scheduler Styles Start */
 .scheduler textarea {
   background: transparent;
@@ -182,7 +214,7 @@ main {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #8ABD91;
   color: white;
   max-width: 150px;
   width: 10%;

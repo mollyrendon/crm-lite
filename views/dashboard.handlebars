@@ -2,7 +2,10 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 
-<section class="customer">
+
+<div class="container">
+<div class="row">
+<section class="customer col-lg-4 text-center">
     <h2>Create New Customer</h2>
     <class="new-customer-form">
         <div>
@@ -12,7 +15,7 @@
         </div>
 </section>
 
-<section class="customer">
+<section class="customer col-lg-4 text-center">
     <h2>View All Customers</h2>
     <class="view-customers">
         <a href="/all-customers">
@@ -22,7 +25,7 @@
 </section>
 
 
-<section class="customer">
+<section class="customer col-lg-4 text-center">
     <h2>Search Customer</h2>
     <class="search-customer">
         <a href="/search-customers">
@@ -30,8 +33,11 @@
         </a>
         </class>
 </section>
+</div>
+</div>
 
-<section class="scheduler">
+<br><br>
+<section class="scheduler text-center">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
