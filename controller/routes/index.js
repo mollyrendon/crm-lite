@@ -59,8 +59,4 @@ router.get("/all-customers", withAuth, (req, res) => {
     });
 });
 
-router.get("/search-customers", withAuth, (req, res) => {
-  res.render("search-customers", { loggedIn: req.session.loggedIn });
-});
-
 module.exports = router;
