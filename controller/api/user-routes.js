@@ -4,9 +4,9 @@ const { body, validationResult } = require('express-validator');
 
 router.post("/",
 
-  body('username').isString,
-  body('email').isEmail,
-  body('password').isStrongPassword,
+  // body('username').isString,
+  // body('email').isEmail,
+  // body('password').isStrongPassword,
 
   (req, res) => {
 
