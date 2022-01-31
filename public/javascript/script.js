@@ -1,10 +1,10 @@
-//Current Date
+/*Current Date*/
 var todaysDate = moment().format("DD MMM, YYYY hh:mm");
 console.log(todaysDate);
 
 $("p#currentDay").text(todaysDate);
 
-//Current Time
+/*Current Time*/
 var currentHour = moment().hour();
 console.log(currentHour);
 $(".description").each(function () {
@@ -18,7 +18,7 @@ $(".description").each(function () {
   }
 });
 
-//Save Functions
+/*Save To Do List Items Function*/
 function saveData() {}
 
 $(".saveBtn").on("click", function () {
@@ -34,7 +34,7 @@ for (var hour = 9; hour < 18; hour++) {
   $("#" + hour).val(localStorage.getItem(hour));
 }
 
-//delete function 
+/*Delete To Do List Items Function*/
 function delData() {}
 
 $(".delBtn").on("click", function () {
@@ -44,8 +44,8 @@ $(".delBtn").on("click", function () {
   var value = textarea.val();
   var key = textarea.attr("id");
   localStorage.removeItem(key, value);
-    })
+});
 
-$(".delBtn").click(function(){
-  location.reload()
-})
+$(".delBtn").click(function () {
+  location.reload();
+});

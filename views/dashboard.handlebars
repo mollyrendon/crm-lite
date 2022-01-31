@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 
-
+{{! Create New Customers}}
 <div class="container">
 <div class="row">
 <section class="customer col-lg-4 text-center">
@@ -15,6 +15,7 @@
         </div>
 </section>
 
+{{! View All Customers}}
 <section class="customer col-lg-4 text-center">
     <h2>View All Customers</h2>
     <class="view-customers">
@@ -24,9 +25,9 @@
         </class>
 </section>
 
-
+{{! Search Customers}}
 <section class="customer col-lg-4 text-center">
-    <h2>Search Customer</h2>
+    <h2>Search Customers</h2>
     <class="search-customer">
         <a href="/search-customers">
             <button type="submit" class="btn">Search</button>
@@ -36,6 +37,8 @@
 </div>
 </div>
 
+
+{{! Work Day Scheduler}}
 <br><br>
 <section class="scheduler text-center">
       <h1 class="display-3">Work Day Scheduler</h1>
@@ -84,7 +87,7 @@
 
       <div class="col-12 col-md-6 col-xl mb-3">
               <div class="row">
-                <div class="col-2 hour time-block" >12am</div>
+                <div class="col-2 hour time-block" >12pm</div>
                 <textarea id="12" class="col-6 description"></textarea>
                 <button class="col-2 delBtn" onclick= "delData()">
                   <i class="far fa-trash-alt"></i>
