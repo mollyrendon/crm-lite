@@ -13,11 +13,12 @@ async function loginFormHandler(event) {
       }),
       headers: { "Content-Type": "application/json" },
     });
-
-    if (response.ok) {
-      document.location.replace("/dashboard/");
+    console.log(response)
+    if (response.ok && response.includes('Incorrect email format.') === false) {
+      //document.location.replace("/dashboard/");
     } else {
-      alert(response.statusText);
+      // console.log(response)
+      alert(response);
     }
   }
 }
@@ -39,11 +40,12 @@ async function signupFormHandler(event) {
       }),
       headers: { "Content-Type": "application/json" },
     });
-
+    console.log(response)
     if (response.ok) {
       document.location.replace("/dashboard/");
     } else {
-      alert(response.statusText);
+      const msg = await response.json()
+      alert(msg.error);
     }
   }
 }

@@ -1,26 +1,34 @@
 const router = require("express").Router();
 const User = require("../../models/user");
+const { body, validationResult } = require('express-validator');
 
-router.post("/", (req, res) => {
-  User.create({
-    username: req.body.username,
-    email: req.body.email,
-    password: req.body.password,
-  })
-    .then((dbUserData) => {
-      req.session.save(() => {
-        req.session.user_id = dbUserData.id;
-        req.session.username = dbUserData.username;
-        req.session.loggedIn = true;
+router.post("/",
 
-        res.json(dbUserData);
-      });
+  body('username').isString,
+  body('email').isEmail,
+  body('password').isStrongPassword,
+
+  (req, res) => {
+
+    User.create({
+      username: req.body.username,
+      email: req.body.email,
+      password: req.body.password,
     })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
+      .then((dbUserData) => {
+        req.session.save(() => {
+          req.session.user_id = dbUserData.id;
+          req.session.username = dbUserData.username;
+          req.session.loggedIn = true;
+
+          res.json(dbUserData);
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+        return res.status(500).json({ error: 'Please check that you input a username, password and correctly formatted email address.' });
+      });
+  });
 
 router.post("/login", (req, res) => {
   User.findOne({
