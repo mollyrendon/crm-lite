@@ -33,3 +33,19 @@ $(".saveBtn").on("click", function () {
 for (var hour = 9; hour < 18; hour++) {
   $("#" + hour).val(localStorage.getItem(hour));
 }
+
+//delete function 
+function delData() {}
+
+$(".delBtn").on("click", function () {
+  var thisBtn = $(this);
+  var parentDiv = thisBtn.parent();
+  var textarea = parentDiv.find("textarea");
+  var value = textarea.val();
+  var key = textarea.attr("id");
+  localStorage.removeItem(key, value);
+    })
+
+$(".delBtn").click(function(){
+  location.reload()
+})
