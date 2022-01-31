@@ -1,141 +1,152 @@
 <head>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 
 
 <div class="container">
-<div class="row">
-<section class="customer col-lg-4 text-center">
-    <h2>Create New Customer</h2>
-    <class="new-customer-form">
+  <div class="row">
+    <section class="customer col-lg-4 text-center">
+      <h2>Create New Customer</h2>
+      <class="new-customer-form">
         <div>
-            <a href="/new-customers">
-                <button type="submit" class="btn">Create</button>
-            </a>
+          <a href="/new-customers">
+            <button type="submit" class="btn">Create</button>
+          </a>
         </div>
-</section>
+    </section>
 
-<section class="customer col-lg-4 text-center">
-    <h2>View All Customers</h2>
-    <class="view-customers">
+    <section class="customer col-lg-4 text-center">
+      <h2>View All Customers</h2>
+      <class="view-customers">
         <a href="/all-customers">
-            <button type="submit" class="btn">View All</button>
+          <button type="submit" class="btn">View All</button>
         </a>
         </class>
-</section>
+    </section>
 
 
-<section class="customer col-lg-4 text-center">
-    <h2>Search Customer</h2>
-    <class="search-customer">
+    <section class="customer col-lg-4 text-center">
+      <h2>Search Customer</h2>
+      <class="search-customer">
         <a href="/search-customers">
-            <button type="submit" class="btn">Search</button>
+          <button type="submit" class="btn">Search</button>
         </a>
         </class>
-</section>
-</div>
+    </section>
+
+
+    <section class="customer col-lg-4 text-center">
+      <h2>View Customer Chart</h2>
+      <class="view-chart">
+        <a href="/chart">
+          <button type="submit" class="btn">View</button>
+        </a>
+        </class>
+    </section>
+
+  </div>
 </div>
 
 <br><br>
 <section class="scheduler text-center">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    <div class="container">
-        
-        <div class="col-12 col-md-6 col-xl mb-3"></div>
-              <div class="row">
-                <div class="col-2 hour time-block" >9am</div>
-                <textarea id="9" class="col-8 description"></textarea>
-                <button class="col-2 saveBtn" onclick="saveData()">
-                  <i class="fas fa-save"></i>
-                </button>
-              </div>
+  <h1 class="display-3">Work Day Scheduler</h1>
+  <p class="lead">A simple calendar app for scheduling your work day</p>
+  <p id="currentDay" class="lead"></p>
+  <div class="container">
+
+    <div class="col-12 col-md-6 col-xl mb-3"></div>
+    <div class="row">
+      <div class="col-2 hour time-block">9am</div>
+      <textarea id="9" class="col-8 description"></textarea>
+      <button class="col-2 saveBtn" onclick="saveData()">
+        <i class="fas fa-save"></i>
+      </button>
     </div>
+  </div>
 
-        <div class="col-12 col-md-6 col-xl mb-3">
-            <div class="row">
-              <div class="col-2 hour time-block" >10am</div>
-              <textarea id="10" class="col-8 description"></textarea>
-              <button class="col-2 saveBtn" onclick="saveData()">
-                <i class="fas fa-save"></i>
-              </button>
-            </div>
-        </div>
-
-      <div class="col-12 col-md-6 col-xl mb-3">
-          <div class="row">
-            <div class="col-2 hour time-block" >11am</div>
-            <textarea id="11" class="col-8 description"></textarea>
-            <button class="col-2 saveBtn" onclick="saveData()">
-              <i class="fas fa-save"></i>
-            </button>
-          </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-xl mb-3">
-          <div class="row">
-            <div class="col-2 hour time-block" >12pm</div>
-            <textarea id="12" class="col-8 description"></textarea>
-            <button class="col-2 saveBtn" onclick="saveData()">
-              <i class="fas fa-save"></i>
-            </button>
-          </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-xl mb-3">
-          <div class="row">
-            <div class="col-2 hour time-block" >1pm</div>
-            <textarea id="13" class="col-8 description"></textarea>
-            <button class="col-2 saveBtn" onclick="saveData()">
-              <i class="fas fa-save"></i>
-            </button>
-          </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-xl mb-3">
-          <div class="row">
-            <div class="col-2 hour time-block" >2pm</div>
-            <textarea id="14" class="col-8 description"></textarea>
-            <button class="col-2 saveBtn" onclick="saveData()">
-              <i class="fas fa-save"></i>
-            </button>
-          </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-xl mb-3">
-          <div class="row">
-            <div class="col-2 hour time-block" >3pm</div>
-            <textarea id="15" class="col-8 description"></textarea>
-            <button class="col-2 saveBtn" onclick="saveData()">
-              <i class="fas fa-save"></i>
-            </button>
-          </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-xl mb-3">
-          <div class="row">
-            <div class="col-2 hour time-block" >4pm</div>
-            <textarea id="16" class="col-8 description"></textarea>
-            <button class="col-2 saveBtn" onclick="saveData()">
-              <i class="fas fa-save"></i>
-            </button>
-          </div>
-      </div>
-
-      <div class="col-12 col-md-6 col-xl mb-3">
-          <div class="row">
-            <div class="col-2 hour time-block" >5pm</div>
-            <textarea id="17" class="col-8 description"></textarea>
-            <button class="col-2 saveBtn" onclick="saveData()">
-              <i class="fas fa-save"></i>
-            </button>
-          </div>
-        </div>
+  <div class="col-12 col-md-6 col-xl mb-3">
+    <div class="row">
+      <div class="col-2 hour time-block">10am</div>
+      <textarea id="10" class="col-8 description"></textarea>
+      <button class="col-2 saveBtn" onclick="saveData()">
+        <i class="fas fa-save"></i>
+      </button>
     </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-xl mb-3">
+    <div class="row">
+      <div class="col-2 hour time-block">11am</div>
+      <textarea id="11" class="col-8 description"></textarea>
+      <button class="col-2 saveBtn" onclick="saveData()">
+        <i class="fas fa-save"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-xl mb-3">
+    <div class="row">
+      <div class="col-2 hour time-block">12pm</div>
+      <textarea id="12" class="col-8 description"></textarea>
+      <button class="col-2 saveBtn" onclick="saveData()">
+        <i class="fas fa-save"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-xl mb-3">
+    <div class="row">
+      <div class="col-2 hour time-block">1pm</div>
+      <textarea id="13" class="col-8 description"></textarea>
+      <button class="col-2 saveBtn" onclick="saveData()">
+        <i class="fas fa-save"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-xl mb-3">
+    <div class="row">
+      <div class="col-2 hour time-block">2pm</div>
+      <textarea id="14" class="col-8 description"></textarea>
+      <button class="col-2 saveBtn" onclick="saveData()">
+        <i class="fas fa-save"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-xl mb-3">
+    <div class="row">
+      <div class="col-2 hour time-block">3pm</div>
+      <textarea id="15" class="col-8 description"></textarea>
+      <button class="col-2 saveBtn" onclick="saveData()">
+        <i class="fas fa-save"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-xl mb-3">
+    <div class="row">
+      <div class="col-2 hour time-block">4pm</div>
+      <textarea id="16" class="col-8 description"></textarea>
+      <button class="col-2 saveBtn" onclick="saveData()">
+        <i class="fas fa-save"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-xl mb-3">
+    <div class="row">
+      <div class="col-2 hour time-block">5pm</div>
+      <textarea id="17" class="col-8 description"></textarea>
+      <button class="col-2 saveBtn" onclick="saveData()">
+        <i class="fas fa-save"></i>
+      </button>
+    </div>
+  </div>
+  </div>
 </section>
 
- {{!-- {{Don't think we need this script}} --}}
+{{!-- {{Don't think we need this script}} --}}
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="/javascript/logout.js"></script>

@@ -11,6 +11,10 @@ router.get("/dashboard", withAuth, (req, res) => {
   res.render("dashboard", { loggedIn: req.session.loggedIn });
 });
 
+router.get("/chart", withAuth, (req, res) => {
+  res.render("chart", { loggedIn: req.session.loggedIn });
+});
+
 router.get("/login", (req, res) => {
   res.render("login");
 });
