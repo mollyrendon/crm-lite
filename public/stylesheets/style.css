@@ -20,7 +20,7 @@ a {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #8ABD91;
+  color: #8abd91;
   font-size: 100%;
   font-weight: bold;
   transition: color 0.1s;
@@ -31,13 +31,13 @@ a {
 /*Hover effect for link buttons */
 a:hover {
   color: white;
-  background-color: #8ABD91;
+  background-color: #8abd91;
   text-decoration: none;
 }
 
 /*Login and Logout buttons on login page*/
 button {
-  background-color: #8ABD91;
+  background-color: #8abd91;
   border: 0;
   padding: 1%;
   color: white;
@@ -48,7 +48,7 @@ button {
 }
 
 button:hover {
-  background-color: #8ABD91;
+  background-color: #8abd91;
   color: white;
 }
 
@@ -77,9 +77,8 @@ header {
   padding: 0 1%;
 }
 
-
 input {
-  color: #8ABD91;
+  color: #8abd91;
   border-radius: 5px;
 }
 
@@ -119,7 +118,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #8ABD91;
+  color: #8abd91;
   font-size: 100%;
   font-weight: bold;
   transition: color 0.1s;
@@ -128,30 +127,30 @@ main {
 }
 
 .btn-no-style:hover {
-  background: #8ABD91;
+  background: #8abd91;
   color: white;
 }
 
 /*Customer Section Styles*/
 
 .customer button {
-  color: #8ABD91;
+  color: #8abd91;
 }
 
 .customer .btn {
   border: 0;
   padding: 1%;
-  color: #8ABD91;
+  color: #8abd91;
   font-weight: bold;
   border-radius: 5px;
 }
 
 .customer button:hover {
-  background-color: #8ABD91;
+  background-color: #8abd91;
   color: white;
   text-decoration: none;
 }
- 
+
 /* Scheduler Styles Start */
 .scheduler textarea {
   background: transparent;
@@ -214,7 +213,7 @@ main {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #8ABD91;
+  background-color: #8abd91;
   color: white;
   max-width: 150px;
   width: 10%;
