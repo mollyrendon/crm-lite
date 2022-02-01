@@ -38,6 +38,16 @@ router.get("/:id", withAuth, (req, res) => {
   });
 });
 
+router.get("/:fist_name", withAuth, (req, res) => {
+  Customer.findOne({
+    where: {
+      first_name: req.params.first_name,
+    },
+  }).then((tagData) => {
+    res.json(tagData);
+  });
+});
+
 router.get("/:last_name", withAuth, (req, res) => {
   Customer.findOne({
     where: {
