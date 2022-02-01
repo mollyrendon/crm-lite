@@ -224,6 +224,21 @@ main {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+.scheduler .delBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #8ABD91;
+  color: white;
+  max-width: 150px;
+  width: 10%;
+}
+
+.scheduler .delBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
 /*Scheduler Styles End*/
 
 /*Footer Styles*/
@@ -233,4 +248,41 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+}
+
+/*search customers*/
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+input {
+  font-size: 1rem;
+}
+
+.user-cards {
+  display: table-row;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: .25rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid black;
+  background-color: white;
+  padding: .5rem;
+}
+
+.card > .header {
+  margin-bottom: .25rem;
+}
+
+.card > .body {
+  font-size: .8rem;
+  color: #777;
+}
+
+.hide {
+  display: none;
 }
