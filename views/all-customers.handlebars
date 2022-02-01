@@ -1,16 +1,29 @@
 {{! Search Customer}}
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <div class="search-wrapper">
-        <label for="search">Search Customers</label>
-         <input type="search" id="search">
-    </div>
-    <div class="user-cards">
-        <div class="card">
+<html>
+        <head>
+            <link rel="stylesheet" href="/stylesheets/style.css" />
+            <script src="search-customers.js"></script>
+        </head>
+    <body>
+         <div class="search-wrapper">
+            <label for="search">Search Customers</label>
+            <input type="search" id="search" data-search>
+        </div>
+        <div class="user-cards" data-user-cards-container></div>
+        <template data-user-template>
+            <div class="card">
+                <div class="header" data-header></div>
+                <div class="body" data-body></div>
+            </div>
+        </template>
+    </body>
+   </html>
+
+        {{!-- <div class="card">
             <div class="header"></div>
             <div class="body"></div>
-        </div>
-    </div>
+        </div> --}}
+    
 
     {{!-- <h2>Search Customer</h2>
     <br>
@@ -89,3 +102,4 @@
 <script src="/javascript/logout.js"></script>
 <script src="/javascript/delete-customers.js"></script>
 <script src="/javascript/customer.js"></script>
+<script src="/api/customer-routes.js"></script>

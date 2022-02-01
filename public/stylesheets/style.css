@@ -80,14 +80,14 @@ input {
   border-radius: 5px;
 }
 
-/*search bar*/
+/* search bar
 input:focus::placeholder {
   color: transparent;
 }
 
 input#searchCustomer {
   width: 200px;
-}
+} */
 
 /*CRM Lite Header*/
 header h1 {

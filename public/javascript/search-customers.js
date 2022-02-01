@@ -15,14 +15,16 @@ searchInput.addEventListener("input", (e) => {
   });
 });
 
-fetch("/api/customers")
+fetch("/api/customer")
   .then((res) => res.json())
   .then((data) => {
     users = data.map((user) => {
       const card = userCardTemplate.content.cloneNode(true).children[0];
+      console.log(card);
       const header = card.querySelector("[data-header]");
       const body = card.querySelector("[data-body]");
-      header.textContent = user.name;
+      header.textContent = user.first_name;
+      header.textContent = user.last_name;
       body.textContent = user.email;
       userCardContainer.append(card);
       return {
