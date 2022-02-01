@@ -18,7 +18,7 @@ a {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #8abd91;
+  color: #8ABD91;
   font-size: 100%;
   font-weight: bold;
   transition: color 0.1s;
@@ -26,16 +26,26 @@ a {
   border-radius: 5px;
 }
 
-/*Hover effect for link buttons */
 a:hover {
-  color: white;
-  background-color: #8abd91;
   text-decoration: none;
+  color: #8ABD91;
 }
+
+/*homepage styling*/
+.homepage {
+  text-align: center;
+  font-size: 36px;
+}
+
+.homepage-p {
+  text-align: center;
+  font-size: 30px;
+}
+
 
 /*Login and Logout buttons on login page*/
 button {
-  background-color: #8abd91;
+  background-color: #8ABD91;
   border: 0;
   padding: 1%;
   color: white;
@@ -43,11 +53,6 @@ button {
   transition: background-color 0.1s;
   cursor: pointer;
   border-radius: 5px;
-}
-
-button:hover {
-  background-color: #8abd91;
-  color: white;
 }
 
 form > div {
@@ -115,7 +120,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #8abd91;
+  color: #8ABD91;
   font-size: 100%;
   font-weight: bold;
   transition: color 0.1s;
@@ -123,9 +128,10 @@ main {
   border-radius: 5px;
 }
 
-.btn-no-style:hover {
-  background: #8abd91;
-  color: white;
+/*delete button*/
+
+.delete-button {
+  background-color: #428bca;
 }
 
 /*Search Customers Bar/Cards Styles*/
@@ -168,21 +174,17 @@ input {
 /*Customer Section Styles*/
 
 .customer button {
-  color: #8abd91;
+  color: #8ABD91;
 }
 
 .customer .btn {
   border: 0;
   padding: 1%;
-  color: #8abd91;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.customer button:hover {
-  background-color: #8abd91;
+  background-color: #8ABD91;
   color: white;
   text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
 }
 
 /* Scheduler Styles Start */
@@ -247,7 +249,7 @@ input {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #8abd91;
+  background-color: #428bca;
   color: white;
   max-width: 150px;
   width: 10%;
