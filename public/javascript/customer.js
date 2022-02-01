@@ -10,7 +10,7 @@ async function createNewCustomer(event) {
   ).value;
   const is_customer = areYouAPayingCustomer === "customer";
 
-  if (first_name && last_name && email && phone_number) {
+  if (first_name && last_name) {
     await fetch("/api/customers", {
       method: "post",
       body: JSON.stringify({
