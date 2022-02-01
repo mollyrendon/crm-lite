@@ -11,6 +11,10 @@ router.get("/dashboard", withAuth, (req, res) => {
   res.render("dashboard", { loggedIn: req.session.loggedIn });
 });
 
+router.get("/chart", withAuth, (req, res) => {
+  res.render("chart", { loggedIn: req.session.loggedIn });
+});
+
 router.get("/login", (req, res) => {
   res.render("login");
 });
@@ -53,10 +57,6 @@ router.get("/all-customers", withAuth, (req, res) => {
       console.log(err);
       res.status(500).json(err);
     });
-});
-
-router.get("/search-customers", withAuth, (req, res) => {
-  res.render("search-customers", { loggedIn: req.session.loggedIn });
 });
 
 module.exports = router;

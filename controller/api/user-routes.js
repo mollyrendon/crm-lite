@@ -1,26 +1,40 @@
 const router = require("express").Router();
 const User = require("../../models/user");
+const { body, validationResult } = require('express-validator');
 
-router.post("/", (req, res) => {
-  User.create({
-    username: req.body.username,
-    email: req.body.email,
-    password: req.body.password,
-  })
-    .then((dbUserData) => {
-      req.session.save(() => {
-        req.session.user_id = dbUserData.id;
-        req.session.username = dbUserData.username;
-        req.session.loggedIn = true;
 
-        res.json(dbUserData);
-      });
+router.post("/",
+
+  body('username').isString(),
+  body('email').isEmail(),
+  body('password').isLength({ min: 5 }),
+
+
+  (req, res) => {
+
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+    User.create({
+      username: req.body.username,
+      email: req.body.email,
+      password: req.body.password,
     })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-});
+      .then((dbUserData) => {
+        req.session.save(() => {
+          req.session.user_id = dbUserData.id;
+          req.session.username = dbUserData.username;
+          req.session.loggedIn = true;
+
+          res.json(dbUserData);
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  });
 
 router.post("/login", (req, res) => {
   User.findOne({
