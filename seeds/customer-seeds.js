@@ -1,5 +1,8 @@
+/*Required Connections*/
 const sequelize = require("../config/connection");
 const Customer = require("../models/customer");
+
+/*Customer Seed Data*/
 
 const customerData = [
   {
