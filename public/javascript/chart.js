@@ -1,9 +1,3 @@
-// const Chart = require('chart.js');
-// const res = require('express/lib/response');
-
-// const { response } = require("express");
-
-// const customers = require("../../seeds/customer-seeds");
 let trues = []
 let falses = []
 const chartValues = [trues.length, falses.length]
@@ -14,6 +8,7 @@ const canvasElement = document.getElementById("customer-additions");
 const countCustomers = async () => {
     await fetch("/api/customers")
         .then(response => response.json())
+        //testing json data responses
         // .then(data => (console.log(data)));
         .then(res => {
             res.forEach(customer => {
@@ -52,6 +47,15 @@ const countCustomers = async () => {
 
 countCustomers();
 
+
+////first iteration of chart code fxn's and dependencies
+
+// const Chart = require('chart.js');
+// const res = require('express/lib/response');
+
+// const { response } = require("express");
+
+// const customers = require("../../seeds/customer-seeds");
 
 // const canvasElement = document.getElementById("customer-additions");
 // let config = {
