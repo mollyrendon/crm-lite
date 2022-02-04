@@ -20,6 +20,8 @@ npm install
 
 ## Usage
 
+Refer to the README.md file for instructions on how to seed the data.
+
 ## Contributions
 
 Contributions made by Molly Rendon, Bryan McGrath, Rebecca Herrera, Dennis Khaperskov
