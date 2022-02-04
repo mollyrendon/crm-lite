@@ -1,4 +1,4 @@
-//Search Customer Code for future use
+/*Search Customer Code for future use*/
 
 // const userCardTemplate = document.querySelector("[data-user-template]");
 // const userCardContainer = document.querySelector("[data-user-cards-container]");
