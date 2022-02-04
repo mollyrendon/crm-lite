@@ -1,3 +1,5 @@
+/*Create New Customer Function*/
+
 async function createNewCustomer(event) {
   event.preventDefault();
 

@@ -1,17 +1,17 @@
+/*Required Connections*/
+
 const router = require("express").Router();
 const User = require("../../models/user");
-const { body, validationResult } = require('express-validator');
+const { body, validationResult } = require("express-validator");
 
+router.post(
+  "/",
 
-router.post("/",
-
-  body('username').isString(),
-  body('email').isEmail(),
-  body('password').isLength({ min: 5 }),
-
+  body("username").isString(),
+  body("email").isEmail(),
+  body("password").isLength({ min: 5 }),
 
   (req, res) => {
-
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
@@ -34,7 +34,8 @@ router.post("/",
         console.log(err);
         res.status(500).json(err);
       });
-  });
+  }
+);
 
 router.post("/login", (req, res) => {
   User.findOne({

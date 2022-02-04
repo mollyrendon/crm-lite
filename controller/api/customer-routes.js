@@ -1,12 +1,13 @@
+/*Required Connections*/
 const router = require("express").Router();
 const sequelize = require("../../config/connection");
 const Customer = require("../../models/customer.js");
 const withAuth = require("../../utils/auth");
 
-//Get all customers
+/*Get all customers*/
 
 router.get("/", withAuth, (req, res) => {
-  console.log("whatever");
+  console.log("get customer test message");
   Customer.findAll({
     where: {
       user_id: req.session.user_id,

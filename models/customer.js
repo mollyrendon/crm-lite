@@ -1,10 +1,11 @@
+/*Required Connections*/
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-// create our User model
+/*Code to create User model*/
 class Customer extends Model {}
 
-// create fields/columns for Customer model
+/*Code to create fields/columns for Customer model*/
 Customer.init(
   {
     id: {

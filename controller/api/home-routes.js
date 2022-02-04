@@ -1,6 +1,10 @@
+/*Required Connections*/
 const router = require("express").Router();
 const withAuth = require("../../utils/auth");
 
+/*Home Routes:
+Routes for homepage and login button on homepage.
+*/
 router.get("/", (req, res) => {
   res.render("homepage");
 });
