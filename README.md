@@ -20,7 +20,9 @@ npm install
 
 ## Usage
 
-Refer to the README.md file for instructions on how to seed the data.
+Use the following login info to view the site with test data. Refer to the README.md for other instructions.  
+Username: testuser@hotmail.com
+Password: password
 
 ## Contributions
 
@@ -36,3 +38,5 @@ GitHub Accounts
 mollyrendon , jbryanmcgrath , rebeccadherrera , Dennnyboy
 
 Please reach us here for further questions.
+
+https://glacial-shore-58084.herokuapp.com/
