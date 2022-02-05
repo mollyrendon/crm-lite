@@ -40,3 +40,5 @@ mollyrendon , jbryanmcgrath , rebeccadherrera , Dennnyboy
 Please reach us here for further questions.
 
 https://glacial-shore-58084.herokuapp.com/
+
+![crm lite screenshot](https://user-images.githubusercontent.com/92175961/152648670-74d660a4-cf9c-42f7-afb8-ced94d65f710.PNG)
